@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love For You, Wify</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload Audio -->
+    <link rel="preload" href="https://assets.mixkit.co/music/preview/mixkit-loving-you-117.mp3" as="audio">
+    <link rel="preload" href="https://assets.mixkit.co/sfx/preview/mixkit-heartbeat-1184.mp3" as="audio">
+    <link rel="preload" href="https://assets.mixkit.co/sfx/preview/mixkit-happy-crowd-laugh-464.mp3" as="audio">
+</head>
+<body>
+    <div class="hearts-bg" id="hearts-bg"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="logo">My Eternal Love</h1>
+            <p class="subtitle">For My Beautiful Wify</p>
+        </header>
+
+        <main class="content">
+            <!-- Love Message -->
+            <section class="card">
+                <h2 class="card-title">My Dearest Wify</h2>
+                <div class="love-message">
+                    <p>Every moment with you is a treasure, and every day I fall more deeply in love with you.</p>
+                    <p>You are the <span class="highlight">sunshine</span> that brightens my days and the <span class="highlight">moonlight</span> that guides my nights.</p>
+                    <p>Today and always, I want you to know that <span class="highlight">I LOVE YOU JUNNU</span> with all my heart.</p>
+                    <p>You are my everything, my forever, my <span class="highlight">WIFY</span>.</p>
+                </div>
+            </section>
+
+            <!-- Proposal -->
+            <section class="card proposal">
+                <h2 class="card-title">My Promise to You</h2>
+                <div class="ring">
+                    <i class="fas fa-ring" aria-hidden="true"></i>
+                    <div class="diamond"></div>
+                </div>
+                <p class="proposal-text" id="proposal-text">Will You Marry Me?</p>
+                <div class="buttons">
+                    <button class="btn yes-btn" id="yes-btn" aria-label="Say Yes">
+                        <i class="fas fa-heart" aria-hidden="true"></i> YES, A THOUSAND TIMES YES!
+                    </button>
+                    <button class="btn no-btn" id="no-btn" aria-label="Try saying no">
+                        <i class="fas fa-grin-wink" aria-hidden="true"></i> Try Saying No 😉
+                    </button>
+                </div>
+            </section>
+
+            <!-- Love Note -->
+            <section class="card love-note">
+                <h2 class="card-title">Write Your Love Note</h2>
+                <textarea class="note-textarea" id="love-note" placeholder="Write your personal love note here...">My Dearest Wify,
+From the moment I met you, my life has been filled with joy and meaning. You are my greatest blessing, and I cherish every moment we share together.
+With all my love,
+Your Junnu</textarea>
+                <button class="btn yes-btn" id="save-note">
+                    <i class="fas fa-save" aria-hidden="true"></i> Save This Love Note
+                </button>
+            </section>
+        </main>
+
+        <footer>
+            <div class="couple-name">Deepjoy & Sreenanda</div>
+            <p>Forever and Always</p>
+        </footer>
+    </div>
+
+    <!-- Sound Control -->
+    <div class="sound-control" id="sound-control" role="button" tabindex="0" aria-label="Toggle background music">
+        <i class="fas fa-volume-up" id="sound-icon" aria-hidden="true"></i>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="https://assets.mixkit.co/music/preview/mixkit-loving-you-117.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="heart-sound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-heartbeat-1184.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="yes-sound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-happy-crowd-laugh-464.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
